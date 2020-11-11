@@ -14,7 +14,7 @@ pipeline {
         stage("paso 1") {
             steps {
                 script {
-                    bash "echo 'hola mundo'"
+                    echo 'hola mundo'
                 }
             }
         }
@@ -23,13 +23,13 @@ pipeline {
 
     post {
         always {
-            bash "echo 'fase always'"
+            echo 'fase always'
         }
         success {
-            bash "echo 'success'"
+            echo 'success'
         }
         failure {
-            bash "echo 'failure'"
+            echo 'failure'
         }
     }
 }
