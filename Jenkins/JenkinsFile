@@ -26,7 +26,7 @@ pipeline {
             deleteDir()
             sh "echo 'fase always'"
         }
-        succes {
+        success {
             sh "echo 'success'"
         }
         failure {
